@@ -251,7 +251,7 @@ def build(bld):
         Logs.info('DEBUG is enabled')
         bld.env['CXXFLAGS'] += debug_flags.split(' ')
     else:
-        Logs.info('DEBUG is is disabled')
+        Logs.info('DEBUG is disabled')
         bld.env['CXXFLAGS'] += opt_flags.split(' ')
 
     print ("Entering directory `" + os.getcwd() + "'")
