@@ -98,6 +98,9 @@ def options(opt):
             opt.end_msg(' -> no option found', 'YELLOW')
 
     for i in glob.glob('exp/*'):
+        # NOTE Erick:
+        # Look into the "modules" inside the exp folder
+        # The wscripts inside them are be executed. 
         opt.start_msg('Command-line options for exp [%s]' % i)
         try:
             opt.recurse(i)
