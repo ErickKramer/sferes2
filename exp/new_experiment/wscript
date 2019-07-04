@@ -1,5 +1,14 @@
 
 #! /usr/bin/env python
+
+from waflib.Configure import conf 
+
+def options(opt):
+    # Tools that will be loaded by waf
+    # Tools are inside the directory waf_tools
+    pass
+
+
 def build(bld):
     bld.program(features = 'cxx',
             source = 'new_experiment.cpp',
