@@ -120,7 +120,7 @@ def configure(conf):
 
     conf.load('compiler_cxx')
 
-    common_flags = "-D_REENTRANT -Wall -fPIC -ftemplate-depth-1024 -Wno-sign-compare -Wno-deprecated  -Wno-unused "
+    common_flags = "-O2 -g -D_REENTRANT -Wall -fPIC -ftemplate-depth-1024 -Wno-sign-compare -Wno-deprecated  -Wno-unused "
     common_flags += "-DSFERES_ROOT=\"" + os.getcwd() + "\" "
     conf.env['CXXFLAGS'] += common_flags.split(' ')
 
